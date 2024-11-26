@@ -6,7 +6,10 @@ from data import scenic_routes
 def get_db_connection():
     """Create a database connection"""
     try:
-        return psycopg2.connect(os.environ['DATABASE_URL'])
+        db_url = os.getenv('DATABASE_URL') or os.getenv('POSTGRES_URL')
+        if not db_url:
+            raise ValueError("No database URL found in environment variables")
+        return psycopg2.connect(db_url)
     except Exception as e:
         print(f"Error connecting to database: {e}")
         raise
