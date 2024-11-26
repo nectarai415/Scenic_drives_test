@@ -1,9 +1,15 @@
 def apply_custom_styles():
     return """
         <style>
-        .stApp {
-            max-width: 1200px;
+        .content-container {
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .map-container {
+            width: 100%;
+            margin-bottom: 2rem;
         }
         
         .route-info {

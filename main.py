@@ -65,10 +65,13 @@ for name, route in scenic_routes.items():
 legend_html = create_legend(categories)
 m.get_root().html.add_child(folium.Element(legend_html))
 
+# Start content container
+st.markdown('<div class="content-container">', unsafe_allow_html=True)
+
 # Display map section
 st.markdown("### Interactive Map")
-st.markdown('<div style="margin-bottom: 2rem;">', unsafe_allow_html=True)
-folium_static(m, width=1200)
+st.markdown('<div class="map-container">', unsafe_allow_html=True)
+folium_static(m)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Display route details section
@@ -100,3 +103,6 @@ st.markdown("""
     <small>Data is for demonstration purposes. Always verify route conditions before travel.</small>
 </div>
 """, unsafe_allow_html=True)
+
+# Close content container
+st.markdown('</div>', unsafe_allow_html=True)
