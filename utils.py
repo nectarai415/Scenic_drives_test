@@ -5,8 +5,8 @@ import streamlit as st
 def create_base_map():
     """Create the base map centered on the Bay Area"""
     return folium.Map(
-        location=[37.7749, -122.4194],
-        zoom_start=9,
+        location=[36.7783, -119.4179],  # California's center
+        zoom_start=6,  # Zoom level to show whole state
         tiles='cartodbpositron'
     )
 

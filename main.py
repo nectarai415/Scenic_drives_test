@@ -7,7 +7,7 @@ from styles import apply_custom_styles
 
 # Page configuration
 st.set_page_config(
-    page_title="Bay Area Scenic Drives",
+    page_title="California Scenic Drives",
     page_icon="🚗",
     layout="wide"
 )
@@ -16,10 +16,10 @@ st.set_page_config(
 st.markdown(apply_custom_styles(), unsafe_allow_html=True)
 
 # Title and introduction
-st.title("🚗 Bay Area Scenic Drives")
+st.title("🚗 California Scenic Drives")
 st.markdown("""
-Explore the most beautiful driving routes in the San Francisco Bay Area. 
-Select routes to view details and plan your next scenic adventure.
+Explore California's most beautiful driving routes, from coastal highways to mountain passes. 
+Discover scenic adventures across the Golden State, from the redwood forests of the north to the desert landscapes of the south.
 """)
 
 # Sidebar filters

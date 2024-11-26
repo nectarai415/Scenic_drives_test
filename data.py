@@ -166,5 +166,137 @@ scenic_routes = {
         "duration": "1.5 hours",
         "highlights": ["Wente Vineyards", "Concannon Vineyard", "Tesla Road Wineries"],
         "category": "wine country"
+    },
+    "Redwood Highway": {
+        "coordinates": [
+            [41.0351, -124.1089],  # Crescent City
+            [40.8021, -124.1637],  # Eureka
+            [40.5865, -124.1558]   # End point
+        ],
+        "description": "Majestic drive through ancient redwood forests along US 101, featuring the tallest trees on Earth.",
+        "distance": "85 miles",
+        "duration": "2.5 hours",
+        "highlights": ["Redwood National Park", "Prairie Creek Redwoods", "Trinidad State Beach"],
+        "category": "coastal"
+    },
+    "Trinity River Scenic Byway": {
+        "coordinates": [
+            [40.7512, -123.9850],  # Start at Arcata
+            [40.8526, -123.5825],  # Willow Creek
+            [40.6531, -122.9219]   # End at Weaverville
+        ],
+        "description": "Spectacular route following the Trinity River through pristine wilderness and mountain landscapes.",
+        "distance": "130 miles",
+        "duration": "3 hours",
+        "highlights": ["Trinity River", "Six Rivers National Forest", "Willow Creek"],
+        "category": "mountain"
+    },
+    "Mount Shasta Scenic Drive": {
+        "coordinates": [
+            [41.3099, -122.3127],  # Mount Shasta City
+            [41.4097, -122.1948],  # Mount Shasta
+            [41.3171, -122.2308]   # End point
+        ],
+        "description": "Circular drive around majestic Mount Shasta with stunning views of the peak and surrounding wilderness.",
+        "distance": "45 miles",
+        "duration": "1.5 hours",
+        "highlights": ["Mount Shasta Peak", "Black Butte", "Castle Lake"],
+        "category": "mountain"
+    },
+    "Big Sur Coast Highway": {
+        "coordinates": [
+            [36.6177, -121.9166],  # Monterey
+            [36.2704, -121.8081],  # Big Sur
+            [35.6852, -121.2842]   # San Simeon
+        ],
+        "description": "One of America's most dramatic coastal drives, featuring rugged cliffs and pristine beaches.",
+        "distance": "90 miles",
+        "duration": "3 hours",
+        "highlights": ["Bixby Bridge", "McWay Falls", "Pfeiffer Beach"],
+        "category": "coastal"
+    },
+    "Monterey Peninsula Loop": {
+        "coordinates": [
+            [36.6002, -121.8947],  # Monterey
+            [36.5552, -121.9233],  # Pacific Grove
+            [36.5552, -121.9233]   # Pebble Beach
+        ],
+        "description": "Scenic loop around the Monterey Peninsula featuring coastal views and historic sites.",
+        "distance": "17 miles",
+        "duration": "1 hour",
+        "highlights": ["17-Mile Drive", "Pebble Beach", "Point Pinos Lighthouse"],
+        "category": "coastal"
+    },
+    "Yosemite Valley Loop": {
+        "coordinates": [
+            [37.7459, -119.5332],  # Yosemite Village
+            [37.7413, -119.5729],  # El Capitan
+            [37.7175, -119.6457]   # Tunnel View
+        ],
+        "description": "Iconic drive through Yosemite Valley showcasing granite cliffs, waterfalls, and meadows.",
+        "distance": "13 miles",
+        "duration": "1 hour",
+        "highlights": ["El Capitan", "Half Dome", "Bridalveil Fall"],
+        "category": "mountain"
+    },
+    "Sierra Vista Scenic Byway": {
+        "coordinates": [
+            [37.3307, -119.6477],  # North Fork
+            [37.4491, -119.3257],  # Mile High Vista
+            [37.2491, -119.2315]   # End point
+        ],
+        "description": "Remote mountain drive offering spectacular views of the Sierra Nevada range.",
+        "distance": "100 miles",
+        "duration": "4 hours",
+        "highlights": ["Globe Rock", "Mile High Vista", "Jackass Rock"],
+        "category": "mountain"
+    },
+    "Angeles Crest Highway": {
+        "coordinates": [
+            [34.2069, -118.2000],  # La Cañada
+            [34.3484, -117.9351],  # Mount Wilson
+            [34.3739, -117.6356]   # Wrightwood
+        ],
+        "description": "Engineering marvel through the San Gabriel Mountains with panoramic views of Los Angeles.",
+        "distance": "66 miles",
+        "duration": "2.5 hours",
+        "highlights": ["Mount Wilson Observatory", "Crystal Lake", "Devils Canyon"],
+        "category": "mountain"
+    },
+    "Joshua Tree Park Loop": {
+        "coordinates": [
+            [34.1275, -116.0366],  # Joshua Tree
+            [33.9961, -116.1666],  # Hidden Valley
+            [33.8734, -115.9010]   # Cottonwood Spring
+        ],
+        "description": "Desert adventure through iconic Joshua Tree landscapes and rock formations.",
+        "distance": "70 miles",
+        "duration": "3 hours",
+        "highlights": ["Hidden Valley", "Keys View", "Skull Rock"],
+        "category": "desert"
+    },
+    "Death Valley Scenic Drive": {
+        "coordinates": [
+            [36.6080, -117.0927],  # Furnace Creek
+            [36.4249, -116.8694],  # Badwater Basin
+            [36.3323, -116.8677]   # End point
+        ],
+        "description": "Journey through the lowest point in North America with surreal desert landscapes.",
+        "distance": "130 miles",
+        "duration": "4 hours",
+        "highlights": ["Badwater Basin", "Zabriskie Point", "Artists Drive"],
+        "category": "desert"
+    },
+    "San Diego Coast Highway": {
+        "coordinates": [
+            [32.9595, -117.2653],  # Del Mar
+            [32.8473, -117.2742],  # La Jolla
+            [32.7157, -117.1611]   # San Diego
+        ],
+        "description": "Stunning coastal drive featuring beautiful beaches and charming seaside towns.",
+        "distance": "30 miles",
+        "duration": "1 hour",
+        "highlights": ["La Jolla Cove", "Torrey Pines", "Sunset Cliffs"],
+        "category": "coastal"
     }
 }
