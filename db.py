@@ -9,7 +9,13 @@ def get_db_connection():
         db_url = os.getenv('DATABASE_URL') or os.getenv('POSTGRES_URL')
         if not db_url:
             raise ValueError("No database URL found in environment variables")
-        return psycopg2.connect(db_url)
+        
+        # Add SSL mode
+        conn = psycopg2.connect(
+            db_url,
+            sslmode='require'
+        )
+        return conn
     except Exception as e:
         print(f"Error connecting to database: {e}")
         raise
