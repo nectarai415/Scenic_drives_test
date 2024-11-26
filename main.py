@@ -65,34 +65,33 @@ for name, route in scenic_routes.items():
 legend_html = create_legend(categories)
 m.get_root().html.add_child(folium.Element(legend_html))
 
-# Create two columns: map and route details
-col1, col2 = st.columns([2, 1])
+# Display map section
+st.markdown("### Interactive Map")
+st.markdown('<div style="margin-bottom: 2rem;">', unsafe_allow_html=True)
+folium_static(m, width=1200)
+st.markdown('</div>', unsafe_allow_html=True)
 
-with col1:
-    st.markdown("### Interactive Map")
-    folium_static(m)
+# Display route details section
+st.markdown("### Route Details")
 
-with col2:
-    st.markdown("### Route Details")
-    
-    if not filtered_routes:
-        st.warning("No routes match the selected filters.")
-    else:
-        for name, route in filtered_routes.items():
-            st.markdown(f"""
-            <div class="route-info">
-                <div class="route-title">{name}</div>
-                <div class="metrics">
-                    <span class="metric">🛣️ {route['distance']}</span>
-                    <span class="metric">⏱️ {route['duration']}</span>
-                </div>
-                <p>{route['description']}</p>
-                <strong>Highlights:</strong>
-                <ul class="highlight-list">
-                    {''.join([f'<li class="highlight-item">• {h}</li>' for h in route['highlights']])}
-                </ul>
+if not filtered_routes:
+    st.warning("No routes match the selected filters.")
+else:
+    for name, route in filtered_routes.items():
+        st.markdown(f"""
+        <div class="route-info">
+            <div class="route-title">{name}</div>
+            <div class="metrics">
+                <span class="metric">🛣️ {route['distance']}</span>
+                <span class="metric">⏱️ {route['duration']}</span>
             </div>
-            """, unsafe_allow_html=True)
+            <p>{route['description']}</p>
+            <strong>Highlights:</strong>
+            <ul class="highlight-list">
+                {''.join([f'<li class="highlight-item">• {h}</li>' for h in route['highlights']])}
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
