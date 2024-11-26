@@ -5,7 +5,11 @@ from data import scenic_routes
 
 def get_db_connection():
     """Create a database connection"""
-    return psycopg2.connect(os.environ['POSTGRES_URL'])
+    try:
+        return psycopg2.connect(os.environ['DATABASE_URL'])
+    except Exception as e:
+        print(f"Error connecting to database: {e}")
+        raise
 
 def migrate_routes():
     """Migrate routes from data.py to the database"""
