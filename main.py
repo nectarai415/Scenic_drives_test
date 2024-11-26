@@ -1,7 +1,7 @@
 import streamlit as st
 import folium
 from streamlit_folium import folium_static
-from data import scenic_routes
+from db import get_all_routes
 from utils import create_base_map, add_route_to_map, get_route_color, create_legend
 from styles import apply_custom_styles
 
@@ -24,6 +24,9 @@ Select routes to view details and plan your next scenic adventure.
 
 # Sidebar filters
 st.sidebar.title("Route Filters")
+
+# Get routes from database
+scenic_routes = get_all_routes()
 
 # Category filter
 categories = list(set(route["category"] for route in scenic_routes.values()))
