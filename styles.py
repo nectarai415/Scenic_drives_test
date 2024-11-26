@@ -10,6 +10,7 @@ def apply_custom_styles():
         .map-container {
             width: 100%;
             margin-bottom: 2rem;
+            overflow: hidden;
         }
         
         .route-info {
