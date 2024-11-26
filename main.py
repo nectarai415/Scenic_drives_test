@@ -71,7 +71,7 @@ st.markdown('<div class="content-container">', unsafe_allow_html=True)
 # Display map section
 st.markdown("### Interactive Map")
 st.markdown('<div class="map-container">', unsafe_allow_html=True)
-folium_static(m, width="100%")
+folium_static(m)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Display route details section
