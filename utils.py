@@ -42,7 +42,9 @@ def get_route_color(category):
     colors = {
         "coastal": "#0066cc",
         "mountain": "#006600",
-        "wine country": "#990033"
+        "wine country": "#990033",
+        "desert": "#c17900",
+        "urban scenic": "#4a4a4a"
     }
     return colors.get(category, "#2b7bf2")
 
@@ -57,7 +59,9 @@ def create_legend(categories):
     colors = {
         "coastal": "#0066cc",
         "mountain": "#006600",
-        "wine country": "#990033"
+        "wine country": "#990033",
+        "desert": "#c17900",
+        "urban scenic": "#4a4a4a"
     }
     
     for category in categories:
